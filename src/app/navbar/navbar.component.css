@@ -1,0 +1,42 @@
+.navbar-inverse {
+background-color: white;
+border: none;
+-moz-border: none;
+-webkit-border: none;
+}
+
+.navbar-collapse {
+  box-shadow: none;
+  text-align: center;
+
+}
+
+.navbar-inverse .navbar-collapse, .navbar-inverse .navbar-form {
+  border: none;
+}
+
+ .navbar-nav li a {
+  color: black;
+  padding-left: 40px;
+  padding-right: 40px;
+  font-family: 'Assistant', sans-serif;
+}
+
+.navbar-nav {
+  width: 100%;
+  text-align: center;
+}
+
+.navbar-nav li {
+  float: none;
+  display: inline-block;
+}
+.navbar-toggle {
+  background-color: #3a3a3a;
+  border: #3a3a3a;
+}
+
+.navbar-toggle:hover {
+  background-color: #3a3a3a;
+  border: #3a3a3a;
+}

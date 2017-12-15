@@ -1,0 +1,42 @@
+.jumbotron {
+  background-image: url(../../assets/plant5.jpg);
+  padding: 50px;
+  margin: 0;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+
+.white-box {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  border: none;
+}
+
+.white-box h1 {
+  padding: 2%;
+  text-align: left;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+}
+
+.white-box p {
+  font-family: 'Assistant', sans-serif;
+}
+
+
+@media (max-width: 960px) {
+  p {
+    font-size: 15px;
+  }
+}
+
+@media (max-width : 400px) {
+  p {
+    font-size: 5px;
+  }
+}

@@ -1,0 +1,13 @@
+.jumbotron {
+  background-image: url(../../assets/plant2.jpg);
+  padding: 0;
+  margin: 0;
+  height: 460px;
+
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 0;
+  margin: 0;
+}

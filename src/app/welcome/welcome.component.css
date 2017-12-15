@@ -1,0 +1,52 @@
+.jumbotron {
+  background: white;
+}
+.container {
+  background-image: url(../../assets/plant6.jpg);
+  background-size: cover;
+  padding: 10%;
+}
+
+.white-box {
+  margin: 0;
+  padding: 5%;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.7);
+  border: none;
+}
+
+.white-box h1 {
+  padding: 2%;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+}
+
+.flat-butt {
+  border: 0;
+  border-radius: 0;
+  background: #3a3a3a;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+
+}
+.flat-butt a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flat-butt:hover {
+  background: #435144;
+}
+a, a:hover, a:active, a:visited, a:focus {
+    text-decoration:none;
+}
+
+/*background-color: #17234E;
+margin-bottom: 0;`enter code here`
+min-height: 50%;
+background-repeat: no-repeat;
+background-position: center;
+-webkit-background-size: cover;
+background-size: cover;*/
