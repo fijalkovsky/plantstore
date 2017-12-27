@@ -1,11 +1,51 @@
 .jumbotron {
-  background-image: url(../../assets/plant7.jpg);
-  height: 200px;
+  background-image: url(../../assets/plant9.jpg);
   padding: 0;
   margin: 0;
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  color: black;
+  padding: 100px;
+
+}
+.container {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.white-form {
+  border: none;
+
+}
+
+.white-form h1 {
+  padding: 2%;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+  text-align: center;
+}
+
+.form-group {
+  font-family: 'Assistant', sans-serif;
+  text-transform: uppercase;
+}
+
+.flat-butt {
+  border: 0;
+  border-radius: 0;
+  background: #3a3a3a;
+  color: white;
+  cursor: pointer;
+  outline: 0;
+  text-transform: uppercase;
+
+}
+.flat-butt a {
+  font-family: 'Assistant', sans-serif;
+  color: white;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.flat-butt:hover {
+  background: #435144;
 }

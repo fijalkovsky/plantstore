@@ -69,6 +69,11 @@
 <br>
     <div style="width: 100px; height: 100px" [@wildState]="wildState">
     </div>
+    <br>
+    <div *ngFor="let image of photos">
+      <img style="width: 100px; height:100px"src="{{image.picture}}">
+
+    </div>
   </div>
 </div>
 

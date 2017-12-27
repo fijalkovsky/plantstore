@@ -28,6 +28,8 @@
   color: white;
   cursor: pointer;
   outline: 0;
+  transition: all 0.5s;
+  padding: 10px;
 
 }
 .flat-butt a {
@@ -35,18 +37,28 @@
   color: white;
   margin-left: 10px;
   margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
 }
-.flat-butt:hover {
-  background: #435144;
+
+.flat-butt a:after {
+  content: '  \00bb';
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
 }
+
+.flat-butt:hover a {
+  padding-right: 15px;
+  color: white;
+}
+
+.flat-butt:hover a:after {
+  opacity: 1;
+  right: 0;
+}
+
 a, a:hover, a:active, a:visited, a:focus {
     text-decoration:none;
 }
-
-/*background-color: #17234E;
-margin-bottom: 0;`enter code here`
-min-height: 50%;
-background-repeat: no-repeat;
-background-position: center;
--webkit-background-size: cover;
-background-size: cover;*/

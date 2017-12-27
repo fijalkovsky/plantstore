@@ -1,4 +1,5 @@
-import { Component, OnInit, trigger, state, style, transition, animate } from '@angular/core';
+import { Component, OnInit, trigger,style,transition,animate,keyframes,state} from '@angular/core';
+
 
 @Component({
   selector: 'app-gallery',
@@ -7,11 +8,15 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
   animations: [
     trigger('divState', [
       state('normal', style({
-        'background-color': 'red',
+        'background-image': 'url(../assets/plant1.jpg)',
+        'background-size': '100px 100px',
+        'background-repeat': 'no-repeat',
         transform: 'translateX(0)'
       })),
       state('highlighted', style({
-        'background-color': 'blue',
+        'background-image': 'url(../assets/plant2.jpg)',
+        'background-size': '100px 100px',
+        'background-repeat': 'no-repeat',
         transform: 'translateX(100px)'
       })),
       transition('normal <=> highlighted', animate(500))
@@ -31,17 +36,30 @@ import { Component, OnInit, trigger, state, style, transition, animate } from '@
       })),
       transition('normal => highlighted', animate('500ms')),
       transition('highlighted => normal', animate('800ms')),
-      transition('shrunken <=> *', animate('400ms'))
+      transition('shrunken <=> *', [
+        style({
+          'background-color': 'orange'
+        }),
+        animate(1000, style({
+          borderRadius: '50px'
+        })),
+        animate(500)
+      ])
     ])
   ]
 })
 export class GalleryComponent implements OnInit {
   state = 'normal';
   wildState = 'normal';
+  photos = [ { picture: "../assets/plant1.jpg" },
+             { picture: "../assets/plant2.jpg" },
+             { picture: "../assets/plant3.jpg" }
+         ];
 
   onAnimate() {
     this.state == 'normal' ? this.state = 'highlighted' : this.state = 'normal';
     this.wildState == 'normal' ? this.wildState = 'highlighted' : this.wildState = 'normal';
+
   }
 
 
