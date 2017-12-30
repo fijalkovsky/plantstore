@@ -8,7 +8,6 @@
   background-size: cover;
 }
 
-
 .white-box {
   margin: 0;
   padding: 5%;
@@ -28,15 +27,20 @@
   font-family: 'Assistant', sans-serif;
 }
 
-
-@media (max-width: 960px) {
+@media (min-width: 0px) and (max-width: 460px) {
+  h1 {
+    font-size: 20px;
+  }
   p {
-    font-size: 15px;
+    font-size: 10px;
   }
 }
 
-@media (max-width : 400px) {
+@media (min-width: 460px) and (max-width: 550px) {
+  h1 {
+    font-size: 25px;
+  }
   p {
-    font-size: 5px;
+    font-size: 15px;
   }
 }

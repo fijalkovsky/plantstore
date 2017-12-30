@@ -15,7 +15,6 @@
 
 .white-form {
   border: none;
-
 }
 
 .white-form h1 {
@@ -48,4 +47,19 @@
 }
 .flat-butt:hover {
   background: #435144;
+}
+
+@media (min-width: 0px) and (max-width: 500px) {
+  .white-form h1 {
+    font-size: 30px;
+    letter-spacing: 5px;
+  }
+  .container{
+    margin: 0;
+  }
+  .jumbotron {
+    margin: 0;
+    padding: 0;
+  }
+
 }

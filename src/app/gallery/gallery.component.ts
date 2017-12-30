@@ -50,6 +50,7 @@ import { Component, OnInit, trigger,style,transition,animate,keyframes,state} fr
 })
 export class GalleryComponent implements OnInit {
   state = 'normal';
+
   wildState = 'normal';
   photos = [ { picture: "../assets/plant1.jpg" },
              { picture: "../assets/plant2.jpg" },

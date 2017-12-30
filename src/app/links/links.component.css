@@ -8,9 +8,13 @@
   margin: 0;
 }
 
-p{
+.address {
   text-align: center;
+  padding: 10px;
+  font-family: 'Assistant', sans-serif;
+  font-size: 40px;
 }
+
 h1 {
   text-align: center;
   font-family: 'Amatic SC', cursive;
@@ -18,8 +22,9 @@ h1 {
 }
 
 .social-media {
-    margin-top: 15px;
-    text-align: center;
+  margin-top: 15px;
+  text-align: center;
+  padding-bottom: 10px;
 }
 
 .social-media ul li {
@@ -27,26 +32,36 @@ h1 {
 }
 
 .social-media ul li a {
-    display: inline-block;
-    background-color: white;
-    width: 45px;
-    height: 45px;
-    line-height: 45px;
-    border-radius: 50%;
-    font-size: 16px;
-    color: #3a3a3a;
-    border: 1px solid rgba(58, 58, 58, 0.8);
-    text-align: center;
-    transition: width 1s;
-transition-timing-function: ease-out;
+  display: inline-block;
+  background-color: white;
+  width: 45px;
+  height: 45px;
+  line-height: 45px;
+  border-radius: 50%;
+  font-size: 16px;
+  color: #3a3a3a;
+  border: 1px solid rgba(58, 58, 58, 0.8);
+  text-align: center;
+  transition: width 1s;
+  transition-timing-function: ease-out;
 
+  -webkit-transform: rotate(0deg);
+ -webkit-transition: all 0.4s;
+ -webkit-animation: strobe 10s infinite;
+ -moz-transform: rotate(90deg);
+ -moz-transition: all 0.4s;
+ -moz-animation: strobe 10s infinite;
+}
+
+.social-media ul li a:hover{
+  -webkit-transform: rotate(360deg);
+  -moz-transform: rotate(360deg);
 }
 
 .social-media ul li a:hover {
-    background: #b78c33;
-    color: #fff;
-    border-color: #b78c33;
-    width: 50px;
-    height: 50px;
-
+  background: #3a3a3a;
+  color: #fff;
+  border-color: #3a3a3a;
+  width: 50px;
+  height: 50px;
 }
