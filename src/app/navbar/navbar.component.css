@@ -33,7 +33,7 @@ border: none;
 }
 
 .navbar-nav li a:hover {
-    color: #435144;
+    color: #94b29e;
 }
 .navbar-toggle {
   background-color: #3a3a3a;
@@ -46,8 +46,10 @@ border: none;
 }
 
 
-.active {
-  background: none;
-  color: red;
+.active[_ngcontent-c1] a[_ngcontent-c1] {
+  background-color: white;
+  color: black;
+  border-bottom: 0.2px solid currentColor;
+  padding-bottom: 5px;
 
 }

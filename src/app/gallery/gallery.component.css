@@ -2,9 +2,18 @@
 
 }
 .jumbotron {
-  background: white;
-  padding-bottom: 100px;
+  background:#94b29e;
+  padding: 0;
+  margin: 0;
 
+}
+
+p {
+  padding: 2%;
+  text-align: center;
+  font-family: 'Amatic SC', cursive;
+  letter-spacing: 10px;
+  font-size: 63px;
 }
 
 /* new */
@@ -13,7 +22,7 @@
 .slides {
     padding: 0;
     width: 609px;
-    height: 420px;
+    height: 480px;
     display: block;
     margin: 0 auto;
     position: relative;
@@ -34,6 +43,7 @@
 
 .slide-container {
   display: block;
+
 }
 
 .slide {
@@ -47,6 +57,7 @@
     transform: scale(0);
 
     transition: all .7s ease-in-out;
+        border: 5px solid white;
 }
 
 .slide img {

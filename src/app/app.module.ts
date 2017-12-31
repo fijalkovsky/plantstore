@@ -10,6 +10,7 @@ import { GalleryComponent } from './gallery/gallery.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { WelcomeComponent } from './welcome/welcome.component';
 import { BuyComponent } from './buy/buy.component';
+import { StoreComponent } from './store/store.component';
 
 
 @NgModule({
@@ -20,7 +21,8 @@ import { BuyComponent } from './buy/buy.component';
     GalleryComponent,
     NavbarComponent,
     WelcomeComponent,
-    BuyComponent
+    BuyComponent,
+    StoreComponent
   ],
   imports: [
     BrowserModule,
