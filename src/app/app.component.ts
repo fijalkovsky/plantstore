@@ -12,4 +12,6 @@ export class AppComponent {
     this.isIn = bool === false ? true : false;
   }
 
+  
+
 }
