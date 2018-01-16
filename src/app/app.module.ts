@@ -1,8 +1,11 @@
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 
+import { AboutService} from './about.service';
+import { StoreService } from './store.service';
 import { AppComponent } from './app.component';
 import { AboutComponent } from './about/about.component';
 import { LinksComponent } from './links/links.component';
@@ -26,10 +29,13 @@ import { StoreComponent } from './store/store.component';
   ],
   imports: [
     BrowserModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    InfiniteScrollModule
   ],
-  providers: [],
+  providers: [
+    AboutService,
+    StoreService
+  ],
   bootstrap: [AppComponent]
 })
-export class AppModule {
- }
+export class AppModule { }

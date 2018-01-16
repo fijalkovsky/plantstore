@@ -6,7 +6,7 @@ import * as $ from "jquery";
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent implements OnInit {
-
+  
   scrollNav() {
     $('.nav a').click(function(){
        //Toggle Class

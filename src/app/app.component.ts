@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { InfiniteScrollModule } from 'ngx-infinite-scroll';
 
 @Component({
   selector: 'app-root',
@@ -11,7 +12,11 @@ export class AppComponent {
     let bool = this.isIn;
     this.isIn = bool === false ? true : false;
   }
+  onScrollDown () {
+	    console.log('scrolled down!!');
+	}
 
-  
-
+	onScrollUp () {
+    	console.log('scrolled up!!');
+    }
 }

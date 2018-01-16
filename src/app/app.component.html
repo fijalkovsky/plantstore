@@ -1,7 +1,14 @@
-<app-navbar></app-navbar>
-<app-welcome></app-welcome>
-<app-about></app-about>
-<app-store></app-store>
-<app-buy></app-buy>
-<app-gallery></app-gallery>
-<app-links></app-links>
+<div infiniteScroll
+		    [infiniteScrollDistance]="1"
+		    [infiniteScrollUpDistance]="2"
+		    [infiniteScrollThrottle]="500"
+        (scrolled)="onScrollDown()"
+		    (scrolledUp)="onScrollUp()">
+  <app-navbar></app-navbar>
+  <app-welcome></app-welcome>
+  <app-about></app-about>
+  <app-store></app-store>
+  <app-buy></app-buy>
+  <app-gallery></app-gallery>
+  <app-links></app-links>
+</div>
